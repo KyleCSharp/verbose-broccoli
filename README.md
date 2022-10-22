@@ -35,7 +35,7 @@ WHERE products.Price = 1400.00;
  select * from bestbuy.products
  where onsale = 1;
 -- find the average price of all products 
- select avg (products.price) from bestbuy,products;
+ select avg (products.price) from bestbuy.products;
 -- find all Geek Squad employees who don't have a middle initial 
  SELECT * FROM bestbuy.employees AS e
 WHERE e.MiddleInitial IS NULL AND e.title = 'Geek Squad';
